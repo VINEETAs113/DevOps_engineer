@@ -1,8 +1,8 @@
-public class EmployeeDetailsDisplay  {
+public class EmployeeDetailsDisplay extends BonusDisplay  {
 
     String employeeName;
     int employeeID;
-    double employeeSalary;
+    static double employeeSalary;
 
         public EmployeeDetailsDisplay(String employeeName,int employeeID,double employeeSalary){
        this.employeeName = employeeName;
@@ -18,19 +18,14 @@ public class EmployeeDetailsDisplay  {
     
 
         }
-       
-
-
-        public static void main(String[] args) {
+       public static void main(String[] args) {
             EmployeeDetailsDisplay emp = new EmployeeDetailsDisplay("Vineeta",1234,45000);
-            emp.displayDetails();
-            
-
-           
+            emp.displayDetails();    
+            double x = 8.33;
+            System.out.println("bonusSalary: " +bonusSalary(x, employeeSalary));
         }
 
-       
-        }
+}
 
 
 
